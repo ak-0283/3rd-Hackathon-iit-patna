@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPlusPlus Redesign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CPlusPlus</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#structure">Structure of a Program</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#forums">Forums</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to CPlusPlus</h1>
+            <p>Your ultimate resource for C++ programming. Learn, explore, and master C++ with our comprehensive guides, tutorials, and community support.</p>
+            <div class="cta-buttons">
+                <a href="#references" class="btn">Get Started</a>
+                <a href="#forums" class="btn btn-outline">Join the Community</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="c-plus-plus-93c7ddd5cc.png" height="350px" width="350px" alt="C++ Programming">
+        </div>
+    </section>
+
+    <section id="references" class="content">
+        <h2>References</h2>
+        <p class="subtitle">Explore the comprehensive C++ reference library.</p>
+        <div class="reference-grid">
+            <div class="reference-card">
+                <i class="fas fa-book icon"></i>
+                <h3>C++ Basics</h3>
+                <p>Learn the fundamentals of C++ programming, including syntax, data types, and control structures.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="reference-card">
+                <i class="fas fa-code icon"></i>
+                <h3>Standard Library</h3>
+                <p>Discover the C++ Standard Library, including containers, algorithms, and utilities.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="reference-card">
+                <i class="fas fa-cogs icon"></i>
+                <h3>Advanced Topics</h3>
+                <p>Dive into advanced C++ topics like templates, multithreading, and memory management.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="structure" class="content">
+        <h2>Structure of a Program</h2>
+        <p>Learn the basic structure of a C++ program.</p>
+        <div class="structure-grid">
+            <div class="structure-card">
+                <h3>Include Directives</h3>
+                <p>Include necessary libraries using the `#include` directive.</p>
+                <pre><code>#include &lt;iostream&gt;</code></pre>
+            </div>
+            <div class="structure-card">
+                <h3>Main Function</h3>
+                <p>The `main()` function is the entry point of every C++ program.</p>
+                <pre><code>int main() {
+        // Your code here
+        return 0;
+    }</code></pre>
+            </div>
+            <div class="structure-card">
+                <h3>Variables and Data Types</h3>
+                <p>Declare variables and use data types like `int`, `float`, and `string`.</p>
+                <pre><code>int number = 10;
+    float pi = 3.14;
+    std::string name = "C++";</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="content">
+        <h2>Articles</h2>
+        <p>Read the latest articles on C++ programming.</p>
+        <div class="articles-grid">
+            <div class="article-card">
+                <img src="https://via.placeholder.com/400x200" alt="C++ Basics">
+                <h3>Getting Started with C++</h3>
+                <p>Learn the basics of C++ programming, from setting up your environment to writing your first program.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="article-card">
+                <img src="https://via.placeholder.com/400x200" alt="Object-Oriented Programming">
+                <h3>Object-Oriented Programming in C++</h3>
+                <p>Discover the principles of OOP and how to apply them in C++ with classes, objects, and inheritance.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="article-card">
+                <img src="https://via.placeholder.com/400x200" alt="C++ Templates">
+                <h3>Mastering C++ Templates</h3>
+                <p>Explore the power of templates in C++ and how they enable generic programming.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="forums" class="content">
+        <h2>Forums</h2>
+        <p>Join the community and discuss C++ topics.</p>
+        <div class="forums-grid">
+            <div class="forum-card">
+                <h3>Beginner Questions</h3>
+                <p>Get help with basic C++ concepts and troubleshoot your code with the community.</p>
+                <a href="#">Join Discussion</a>
+            </div>
+            <div class="forum-card">
+                <h3>Advanced Topics</h3>
+                <p>Discuss advanced C++ topics like templates, multithreading, and performance optimization.</p>
+                <a href="#">Join Discussion</a>
+            </div>
+            <div class="forum-card">
+                <h3>Project Collaboration</h3>
+                <p>Find collaborators for open-source projects or share your own projects for feedback.</p>
+                <a href="#">Join Discussion</a>
+            </div>
+        </div>
+    </section>
+
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2023 CPlusPlus. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
