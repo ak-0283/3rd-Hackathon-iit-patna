@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering C++ Templates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CPlusPlus</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#structure">Structure of a Program</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#forums">Forums</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Mastering C++ Templates</h1>
+        <p>Explore the power of templates in C++ and how they enable generic programming.</p>
+        
+        <div class="details">
+            <h2>What are C++ Templates?</h2>
+            <p>C++ templates allow you to write generic and reusable code. They enable you to define functions and classes that work with any data type, making your code more flexible and maintainable.</p>
+
+            <h2>Key Concepts</h2>
+            <ul>
+                <li><strong>Function Templates:</strong> Write generic functions that work with any data type.</li>
+                <li><strong>Class Templates:</strong> Create generic classes that can operate on different data types.</li>
+                <li><strong>Template Specialization:</strong> Customize templates for specific data types.</li>
+            </ul>
+
+            <h2>Example Code</h2>
+            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+// Function Template
+template &lt;typename T&gt;
+T add(T a, T b) {
+    return a + b;
+}
+
+// Class Template
+template &lt;typename T&gt;
+class Box {
+private:
+    T value;
+public:
+    void setValue(T v) {
+        value = v;
+    }
+    T getValue() {
+        return value;
+    }
+};
+
+int main() {
+    // Function Template Example
+    cout << "Sum (int): " << add(5, 10) << endl;
+    cout << "Sum (double): " << add(3.5, 2.7) << endl;
+
+    // Class Template Example
+    Box&lt;int&gt; intBox;
+    intBox.setValue(123);
+    cout << "Box Value: " << intBox.getValue() << endl;
+
+    return 0;
+}</code></pre>
+        </div>
+
+        <a href="../index.html" class="btn">Back to Home</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 CPlusPlus. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

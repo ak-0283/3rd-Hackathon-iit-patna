@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Oriented Programming in C++</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CPlusPlus</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#structure">Structure of a Program</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#forums">Forums</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Object-Oriented Programming in C++</h1>
+        <p>Discover the principles of OOP and how to apply them in C++ with classes, objects, and inheritance.</p>
+        
+        <div class="details">
+            <h2>What is Object-Oriented Programming?</h2>
+            <p>Object-Oriented Programming (OOP) is a programming paradigm that uses objects and classes to structure software. It focuses on encapsulation, inheritance, and polymorphism to create reusable and modular code.</p>
+
+            <h2>Key Concepts</h2>
+            <ul>
+                <li><strong>Classes and Objects:</strong> Classes are blueprints for objects, and objects are instances of classes.</li>
+                <li><strong>Encapsulation:</strong> Bundling data and methods that operate on the data within a single unit (class).</li>
+                <li><strong>Inheritance:</strong> Creating new classes from existing ones to promote code reuse.</li>
+                <li><strong>Polymorphism:</strong> Using a single interface to represent different types of objects.</li>
+            </ul>
+
+            <h2>Example Code</h2>
+            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+// Base Class
+class Animal {
+public:
+    void speak() {
+        cout << "Animal speaks!" << endl;
+    }
+};
+
+// Derived Class
+class Dog : public Animal {
+public:
+    void speak() {
+        cout << "Dog barks!" << endl;
+    }
+};
+
+int main() {
+    Animal animal;
+    Dog dog;
+
+    animal.speak(); // Output: Animal speaks!
+    dog.speak();    // Output: Dog barks!
+
+    return 0;
+}</code></pre>
+        </div>
+
+        <a href="../index.html" class="btn">Back to Home</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 CPlusPlus. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
